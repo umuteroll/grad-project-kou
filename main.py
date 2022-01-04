@@ -20,12 +20,14 @@ def getQuestion(katman,label_value_before,label_value):
     for x in range(len(arr)):
         if(arr[x]["label"] in label_value and label_value_before in arr[x]["labelBefore"]):
              return arr[x]["question"]
-    print(" Yanlış Yanıt Girdiniz")
+    print("Yanlış Yanıt Girdiniz")
     restartGame()
+    
 
 def mainFunction(katman,label_value,label_value_before):
     question = getQuestion(katman,label_value_before,label_value)
     katman = katman+1
+    print(chr(27) + "[2J")
     print(question)
     isDead(label_value,katman)
     answer = input(" Ne yaparsın? ")

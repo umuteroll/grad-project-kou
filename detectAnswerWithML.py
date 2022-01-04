@@ -7,7 +7,7 @@ import fasttext
 def isResultValid(result,katman):
     if(float(result[1])<0.88):
         print("Alakasız bir yanıt girdininiz")
-        answer2 = input("Lütfen Tekrar bir yanıt girin")
+        answer2 = input("Lütfen Tekrar bir yanıt girin ")
         detectAnswer(katman,answer2)
     return result[0][0][9:]
 
