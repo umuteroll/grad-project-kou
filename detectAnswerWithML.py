@@ -1,6 +1,6 @@
-import pandas as pd 
-from   pandas import DataFrame as df
-import numpy as np
+#! /usr/bin/env python
+# -*- coding: UTF-8 -*-
+
 import fasttext 
 
 
@@ -15,5 +15,6 @@ def detectAnswer(katman,answer):
   fileName = "model"+str(katman)+".csv"
   model = fasttext.train_supervised(input=fileName, epoch=200, lr=0.8, wordNgrams=1,loss='hs',dim=300)
   result = model.predict(answer,k=1)
+  print(result)
   return isResultValid(result,katman)
 

@@ -1,3 +1,5 @@
+#! /usr/bin/env python
+# -*- coding: UTF-8 -*-
 import detectAnswerWithML as ml
 import questions          as q
 """
@@ -20,7 +22,7 @@ def getQuestion(katman,label_value_before,label_value):
     for x in range(len(arr)):
         if(arr[x]["label"] in label_value and label_value_before in arr[x]["labelBefore"]):
              return arr[x]["question"]
-    print("Yanlış Yanıt Girdiniz")
+    print("Yanlis Yanıt Girdiniz")
     restartGame()
     
 

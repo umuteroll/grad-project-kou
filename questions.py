@@ -1,3 +1,5 @@
+#! /usr/bin/env python
+# -*- coding: UTF-8 -*-
 questions = [
 [{"question":"Ormana gitmeye karar verdin. Soğuktan üşümeye başladın kendini ısıtman lazım.","label":"2","labelBefore":"1"},
 {"question":"Mağaraya gitmeye karar verdin girdiğin gibi giriş çökmeye başladı kendinizi zor kurtardın. ayağa kalktın etraf çok karanlık.","label":"3","labelBefore":"1"}],
